@@ -200,7 +200,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/hero-bg.png);
+	background-image: url(./img/hero.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -214,7 +214,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.5;
 	z-index: -1;
 }
 #hero .hero {
@@ -291,7 +291,7 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img-1.png);
+	background-image: url(./img/pic_summergirl.png);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
@@ -306,7 +306,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.9;
+	opacity: 0.6;
 	z-index: -1;
 }
 #services .service-bottom .icon {
@@ -323,36 +323,38 @@ p {
 #services .service-item p {
 	color: white;
 	text-align: left;
+	font-size: medium;
 }
 /* End Services Section */
 
-/* Projects section */
-#projects .projects {
+/* anime section */
+#anime .anime {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
-#projects .projects-header h1 {
+#anime .anime-header h1 {
 	margin-bottom: 50px;
 }
-#projects .all-projects {
+#anime .all-anime {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
-#projects .project-item {
+#anime .anime-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	width: 80%;
+	
 	margin: 20px auto;
 	overflow: hidden;
 	border-radius: 10px;
 }
-#projects .project-info {
+#anime .anime-info {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
@@ -363,25 +365,28 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
-#projects .project-info h1 {
+#anime .anime-info a{
+	color: white;
+}
+#anime .anime-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
-#projects .project-info h2 {
+#anime .anime-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
-#projects .project-info p {
+#anime .anime-info p {
 	color: white;
 }
-#projects .project-img {
+#anime .anime-img {
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
-#projects .project-img:after {
+#anime .anime-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -389,15 +394,15 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: 0.7;
+	opacity: 0.5;
 }
-#projects .project-img img {
+#anime .anime-img img {
 	transition: 0.3s ease transform;
 }
-#projects .project-item:hover .project-img img {
+#anime .anime-item:hover .anime-img img {
 	transform: scale(1.1);
 }
-/* End Projects section */
+/* End anime section */
 
 /* About Section */
 #about .about {
@@ -422,6 +427,8 @@ p {
 }
 #about .col-right p {
 	margin-bottom: 20px;
+	text-indent:50px;
+	line-height: 2em;
 }
 #about .col-right .cta {
 	color: black;
@@ -589,26 +596,26 @@ p {
 	}
 	/* End Services Section */
 
-	/* Project */
-	#projects .project-item {
+	/* anime */
+	#anime .anime-item {
 		flex-direction: row;
 	}
-	#projects .project-item:nth-child(even) {
+	#anime .anime-item:nth-child(even) {
 		flex-direction: row-reverse;
 	}
-	#projects .project-item {
+	#anime .anime-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
-	#projects .all-projects .project-info {
+	#anime .all-anime .anime-info {
 		height: 100%;
 	}
-	#projects .all-projects .project-img {
+	#anime .all-anime .anime-img {
 		height: 100%;
 	}
-	/* End Project */
+	/* End anime */
 
 	/* About */
 	#about .about {
